@@ -21,6 +21,7 @@ function oldestPerson (people) {
  }
 console.log(oldestPerson(persons));
 
+
 //2 Define a function called longestWord that takes a string and returns the longest word in the string.
 
 function longestWord (string) {
@@ -41,6 +42,7 @@ function longestWord (string) {
 }
 
 console.log(longestWord("what????????? is theeeeeee string"));
+
 
 //3Refactor the longestWord function so that it ignores punctuation.
 function longestWord (string) {
@@ -66,39 +68,40 @@ function longestWord (string) {
 
 console.log(longestWord("what??????????? is theee?#?$?%eeee string"));
 
+
 //4Define a function called factorial that takes a random number as an argument and then returns the factorial of that given number.
 
 //This one was a huge pain in the a$$. The math of it kept messing me up. I had already spent hours trying to solve it on coderbyte
 
-// function factorial(num) {
-//   var total = 1;
-//   for (var i = 1; i <= num; i++) {
-//     total *= i;
-//    //console.log("i",i);
-//    //console.log("total", total);
-//   }
-//   return total;
-// }
-//
-// console.log(factorial(4));
+function factorial(num) {
+  var total = 1;
+  for (var i = 1; i <= num; i++) {
+    total *= i;
+   //console.log("i",i);
+   //console.log("total", total);
+  }
+  return total;
+}
+
+console.log(factorial(4));
 
 
 //5Bonus: Write a function called palindrome that takes a string as an argument and returns the string in reversed order. Return true if the string is the same as the reversed string, otherwise return false.
 //Also had already solved this on coderbyte but I hadn't considered the capital letters, issue, so refactored for that.
 
-// function palindrome(str) {
-//     var str2 = str.replace(/ /g, "").toLowerCase();
-//     console.log("str2", str2);
-//     var rts = str2.split("").reverse().join("");
-//
-// 	console.log("rts", rts);
-//   if(rts == str2){
-//     return true;}
-//   else {
-//     return false;}
-// }
-//
-// console.log(palindrome("Too hot to hoot"));
-// console.log(palindrome("too hot to hoot"));
-// console.log(palindrome("this will not work"));
-// console.log(palindrome("mom"));
+function palindrome(str) {
+    var str2 = str.replace(/ /g, "").toLowerCase();
+    console.log("str2", str2);
+    var rts = str2.split("").reverse().join("");
+
+	console.log("rts", rts);
+  if(rts == str2){
+    return true;}
+  else {
+    return false;}
+}
+
+console.log(palindrome("Too hot to hoot"));
+console.log(palindrome("too hot to hoot"));
+console.log(palindrome("this will not work"));
+console.log(palindrome("mom"));
